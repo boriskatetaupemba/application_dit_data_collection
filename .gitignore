@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Configuration locale et secrets
+.env
+.streamlit/secrets.toml
+*.pem
+*.key
+
+# Données générées localement
+data/raw/*.csv
+data/raw/*.json
+data/cleaned/*.csv
+data/cleaned/*.json
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+*.db-journal
+
+# Navigateurs / Selenium
+chromedriver*
+geckodriver*
+selenium-profile/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+

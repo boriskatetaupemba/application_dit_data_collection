@@ -1,0 +1,74 @@
+{
+  "_id": "gaaraas-dakar-auto-raw",
+  "startUrl": [
+    "https://www.gaaraas.com/fr/users/dakar-auto?page=[1-100]"
+  ],
+  "selectors": [
+    {
+      "elementLimit": 0,
+      "id": "vehicle_card",
+      "multiple": true,
+      "parentSelectors": ["_root"],
+      "scroll": false,
+      "selector": "a.common-ad-card[href*='/vehicle_listings/']",
+      "type": "SelectorElement"
+    },
+    {
+      "extractAttribute": "href",
+      "id": "listing_url_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "selector": "_parent_",
+      "type": "SelectorElementAttribute"
+    },
+    {
+      "id": "vehicle_title_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "regex": "",
+      "selector": "h4[title]",
+      "type": "SelectorText"
+    },
+    {
+      "id": "price_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "regex": "",
+      "selector": ".ad-vehicle-price .value",
+      "type": "SelectorText"
+    },
+    {
+      "id": "mileage_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "regex": "",
+      "selector": ".ad-vehicle-mileage .value",
+      "type": "SelectorText"
+    },
+    {
+      "id": "gearbox_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "regex": "",
+      "selector": ".transmission span",
+      "type": "SelectorText"
+    },
+    {
+      "id": "region_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "regex": "",
+      "selector": ".location",
+      "type": "SelectorText"
+    },
+    {
+      "id": "description_raw",
+      "multiple": false,
+      "parentSelectors": ["vehicle_card"],
+      "regex": "",
+      "selector": ".sort-ad-description",
+      "type": "SelectorText"
+    }
+  ]
+}
+

@@ -1,0 +1,88 @@
+{
+  "_id": "books-to-scrape-raw",
+  "startUrl": [
+    "https://books.toscrape.com/catalogue/page-[1-50].html"
+  ],
+  "selectors": [
+    {
+      "id": "book_url",
+      "multiple": true,
+      "parentSelectors": ["_root"],
+      "selector": "article.product_pod h3 a",
+      "type": "SelectorLink"
+    },
+    {
+      "id": "title_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": ".product_main h1",
+      "type": "SelectorText"
+    },
+    {
+      "id": "price_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": ".product_main .price_color",
+      "type": "SelectorText"
+    },
+    {
+      "id": "availability_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": ".product_main .availability",
+      "type": "SelectorText"
+    },
+    {
+      "extractAttribute": "class",
+      "id": "rating_class_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "selector": ".product_main .star-rating",
+      "type": "SelectorElementAttribute"
+    },
+    {
+      "id": "reviews_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": "table.table-striped tr:nth-child(7) td",
+      "type": "SelectorText"
+    },
+    {
+      "id": "description_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": "#product_description + p",
+      "type": "SelectorText"
+    },
+    {
+      "id": "category_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": ".breadcrumb li:nth-last-child(2) a",
+      "type": "SelectorText"
+    },
+    {
+      "id": "product_type_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": "table.table-striped tr:nth-child(2) td",
+      "type": "SelectorText"
+    },
+    {
+      "id": "tax_raw",
+      "multiple": false,
+      "parentSelectors": ["book_url"],
+      "regex": "",
+      "selector": "table.table-striped tr:nth-child(5) td",
+      "type": "SelectorText"
+    }
+  ]
+}
+

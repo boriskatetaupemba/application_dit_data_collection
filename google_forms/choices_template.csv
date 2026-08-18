@@ -1,0 +1,44 @@
+choices_group,value,order
+ROLE,Étudiant,1
+ROLE,Enseignant,2
+ROLE,Chercheur,3
+ROLE,Analyste de données,4
+ROLE,Développeur,5
+ROLE,Chef de projet,6
+ROLE,Autre,7
+DEVICE,Ordinateur,1
+DEVICE,Tablette,2
+DEVICE,Smartphone,3
+FIRST_USAGE,Oui,1
+FIRST_USAGE,Non,2
+PREVIOUS_USAGE_COUNT,2 à 3 fois,1
+PREVIOUS_USAGE_COUNT,4 à 5 fois,2
+PREVIOUS_USAGE_COUNT,Plus de 5 fois,3
+LIKERT_5,Tout à fait en désaccord,1
+LIKERT_5,En désaccord,2
+LIKERT_5,Neutre,3
+LIKERT_5,D'accord,4
+LIKERT_5,Tout à fait d'accord,5
+FEATURES_TESTED,Collecte (scraping) de données,1
+FEATURES_TESTED,Téléchargement,2
+FEATURES_TESTED,Remplissage du formulaire,3
+FEATURES_TESTED,Tableau de bord des données,4
+PROBLEM_YES_NO,Oui,1
+PROBLEM_YES_NO,Non,2
+PROBLEM_TYPES,Erreur de chargement,1
+PROBLEM_TYPES,Problème d'affichage,2
+PROBLEM_TYPES,Fonctionnalité non fonctionnelle,3
+PROBLEM_TYPES,Perte de données,4
+PROBLEM_TYPES,Performance lente,5
+PROBLEM_TYPES,Interface confuse,6
+PROBLEM_TYPES,Autre,7
+RECOMMENDATION,"Oui, sans hésiter",1
+RECOMMENDATION,"Oui, probablement",2
+RECOMMENDATION,Peut-être,3
+RECOMMENDATION,Probablement pas,4
+RECOMMENDATION,Non,5
+REUSE,"Oui, régulièrement",1
+REUSE,"Oui, occasionnellement",2
+REUSE,Peut-être,3
+REUSE,Probablement pas,4
+REUSE,Non,5

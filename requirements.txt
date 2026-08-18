@@ -1,0 +1,7 @@
+# Dépendances d'exécution testées pour la version livrée.
+streamlit==1.61.1
+selenium==4.47.0
+pandas==3.0.5
+plotly==6.9.0
+openpyxl==3.1.5
+
