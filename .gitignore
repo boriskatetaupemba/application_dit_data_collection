@@ -10,9 +10,8 @@ htmlcov/
 .venv/
 venv/
 
-# Configuration locale et secrets
+# Configuration locale privée
 .env
-.streamlit/secrets.toml
 *.pem
 *.key
 
@@ -25,6 +24,12 @@ data/*.db
 data/*.sqlite
 data/*.sqlite3
 *.db-journal
+
+# Livrables conservés uniquement en local
+docs/
+google_forms/
+kobo/
+tests/
 
 # Navigateurs / Selenium
 chromedriver*
@@ -41,4 +46,3 @@ Thumbs.db
 build/
 dist/
 *.egg-info/
-

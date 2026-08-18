@@ -58,7 +58,6 @@ python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-Copy-Item .streamlit\secrets.toml.example .streamlit\secrets.toml
 streamlit run app.py
 ```
 
@@ -69,7 +68,6 @@ python -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
-cp .streamlit/secrets.toml.example .streamlit/secrets.toml
 streamlit run app.py
 ```
 
@@ -77,7 +75,11 @@ Ouvrir `http://localhost:8501`.
 
 ## Configuration
 
-Ne jamais versionner les valeurs réelles. Deux méthodes sont acceptées.
+Le fichier `.streamlit/secrets.toml` est suivi par Git dans ce projet, car il ne
+contient que le chemin SQLite et des URL publiques de formulaires. Ne jamais y
+ajouter de mot de passe, jeton, clé API ou identifiant privé. Pour ces valeurs
+sensibles, utiliser les secrets de la plateforme ou des variables
+d'environnement non versionnées.
 
 ### Secrets Streamlit
 
